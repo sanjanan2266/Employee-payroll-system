@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Payroll System</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Payroll System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Employee Payroll System</h1>
+
+    <div id="login">
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+
+        <h2>Add Employee</h2>
+
+        <input type="text" id="name" placeholder="Employee Name">
+        <input type="number" id="salary" placeholder="Basic Salary">
+
+        <button onclick="addEmployee()">Add Employee</button>
+        <button onclick="generatePayslip()">Generate Payslip</button>
+
+       <h2>Payslip</h2>
+       <div id="payslip"></div>
+
+        <h2>Employees</h2>
+
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Basic</th>
+                    <th>HRA</th>
+                    <th>DA</th>
+                    <th>Gross Salary</th>
+                </tr>
+            </thead>
+
+            <tbody id="employeeTable"></tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
